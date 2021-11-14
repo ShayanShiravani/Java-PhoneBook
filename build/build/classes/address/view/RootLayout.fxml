@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="address.view.RoutLayoutController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="660.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton fx:id="Option" layoutX="108.0" layoutY="33.0" mnemonicParsing="false" text="Option">
+              <items>
+                <MenuItem fx:id="sync" mnemonicParsing="false" text="Sync" />
+                <MenuItem fx:id="imp" mnemonicParsing="false" text="Import" />
+                  <MenuItem fx:id="exp" mnemonicParsing="false" text="Export" />
+              </items>
+            </MenuButton>
+            <Button fx:id="contact" layoutX="782.0" layoutY="33.0" mnemonicParsing="false" onAction="#ContactButton" text="Contacts" />
+            <Button fx:id="groups" layoutX="706.0" layoutY="33.0" mnemonicParsing="false" onAction="#GroupButton" text="Groups" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
